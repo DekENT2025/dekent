@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
@@ -35,109 +35,238 @@
   <title>Registration</title>
 <link rel="icon" type="image/x-icon" href="entertainmenticon.ico">	
 
- <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    } 
+  <!-- CSS -->
 
-    body {
-      background: #000;
-      font-family: sans-serif;
-      color: #fff;
-    }
-	  
-	    .banner {
-      width: 100%;
-      height: auto;
-      display: block;
-    }  
+  <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
 
-    .navbar_menu {
-      background-color: #222;
-      padding: 10px 0;
-      overflow-x: auto;
-    }
+/* Banner image */
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-    .navbar_menu ul {
-      list-style: none;
-      display: flex;
-      padding: 0 200px;
-      margin: 0;
-    }
+/* Navigation bar */
+.navbar_menu {
+  background-color: #222;
+  padding: 10px 0;
+  overflow-x: auto;
+}
 
-    .navbar_container {
-      margin: 0 10px;
-      padding: 0 10px;
-      border-right: 1px solid #555;
-      white-space: nowrap;
-    }
+.navbar_menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 200px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
 
-    .navbar_container:last-child {
-      border-right: none;
-    }
+.navbar_container {
+  margin: 0 10px;
+  padding: 0 10px;
+  border-right: 1px solid #555;
+  white-space: nowrap;
+}
 
-    .navbar_container a {
-      display: block;
-      padding: 15px 20px;
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
+.navbar_container:last-child {
+  border-right: none;
+}
 
-    .navbar_container a span {
-      display: block;
-      font-weight: normal;
-      font-size: 0.8em;
-      color: #ccc;
-    }
+.navbar_container a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-    .navbar_container a:hover {
-      background-color: #333;
-      color: white;
-      transform: scale(1.05);
-      border-radius: 5px;
-    }
-	  
- /* ส่วนนี้คือ Media Query ที่เพิ่มเข้าไป */
-  @media (max-width: 768px) {
-    .navbar_menu ul {
-      flex-direction: column;
-      padding: 0 20px;
-      align-items: flex-start;
-    }
+.navbar_container a span {
+  display: block;
+  font-weight: normal;
+  font-size: 0.8em;
+  color: #ccc;
+}
 
-    .navbar_container {
-      border-right: none;
-      border-bottom: 1px solid #444;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
+.navbar_container a:hover {
+  background-color: #222;
+  color: white;
+  transform: scale(1.05);
+  border-radius: 5px;
+}
 
-    .navbar_container a {
-      width: 100%;
-      padding: 15px;
-    }
-  }	   	  
+@media (max-width: 768px) {
+  .navbar_menu ul {
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: flex-start;
+  }
 
-    .icon-link img {
-      transition: 0.3s ease;
-    }
+  .navbar_container {
+    border-right: none;
+    border-bottom: 1px solid #444;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-    .icon-link img:hover {
-      opacity: 0.6;
-      transform: scale(1.05);
-    }
+  .navbar_container a {
+    width: 100%;
+    padding: 15px;
+  }
+}
 
-    .icon-link:active img {
-      opacity: 0.4;
-    }
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 540px;
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-header img {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.btn, .btn2 {
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn {
+  background-color: #28a745;
+}
+
+.btn:hover {
+  background-color: #105B3B;
+}
+
+.btn2 {
+  background-color: #007bff;
+}
+
+.btn2:hover {
+  background-color: #0F1E55;
+}
+
+.bg-blue {
+  background-color: #007bff;
+}
+
+.bg-green {
+  background-color: #28a745;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Tuition table */
+.tuition-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tuition-table th, .tuition-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.tuition-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.tuition-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tuition-table tbody tr:hover {
+  background-color: #eef6ff;
+}
+
+/* Responsive images */
+.responsive-img {
+  width: 100%;
+  height: auto;
+  max-width: 960px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Icon links */
+.icon-link img {
+  transition: 0.3s ease;
+}
+
+.icon-link img:hover {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+
+.icon-link:active img {
+  opacity: 0.4;
+}
 
     footer {
-      color: #fff;
+      color: #000;
       padding: 0px;
       text-align: center;
       font-size: 14px;
@@ -147,8 +276,10 @@
       display: block;
       margin-bottom: 5px;
     }
+	  
   </style>
 </head>
+	
 <body>
   <!-- แถบเมนู -->
   <nav class="navbar_menu">
@@ -173,7 +304,109 @@
       </li>
     </ul>
   </nav>
+	
+  <div class="container">
+	<div style="text-align: center; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+	<img src="entertainmenticon.ico" alt="ไทย">
+    <h2 style="text-align: center;">สมัครเรียน (Apply to study)</h2>
 
+    <div class="card-container">
+      <div class="card">
+        <div class="card-header bg-blue">
+          <img src="entertainmenticon.ico" alt="ไทย">
+          สมัครเรียน ระดับปริญญาตรี (Apply for a bachelor's degree)
+        </div>
+        <div class="card-body">
+          <p>วุฒิการศึกษา ม.6 / ปวช. หรือเทียบเท่า</p>
+          <p>Receive a high school diploma/vocational certificate or equivalent.</p>
+          <a href="https://admis.rmutsb.ac.th/admisapply/402&education/4&educationadmis/2&around/2&yearid/6" target="_blank" class="btn2">สมัครเรียน (Apply to study)</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg-green">
+          <img src="entertainmenticon.ico" alt="ไทย">
+          สมัครเรียน ระดับปริญญาตรี ต่อเนื่อง (Apply for a bachelor's degree)
+        </div>
+        <div class="card-body">
+          <p>วุฒิการศึกษา ปวส. หรือเทียบเท่า</p>
+          <p>Receive a vocational certificate or equivalent</p>
+          <a href="https://admis.rmutsb.ac.th/admisapply/406&education/4&educationadmis/4&around/2&yearid/6" target="_blank" class="btn">สมัครเรียน (Apply to study)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>คุณสมบัติของผู้เข้าศึกษา</h2>
+  	<p>&#8594; ระดับปริญญาตรีปีที่ 1 ต้องสำเร็จการศึกษาระดับประกาศนียบัตรวิชาชีพ (ปวช.) ทุกสาขาวิชา และระดับมัธยมศึกษาตอนปลาย (ม.6) ทุกกลุ่มสาระการเรียนรู้ หรือเทียบเท่าที่กระทรวงศึกษาธิการรับรอง</p>
+  	<p>&#8594; สำหรับหลักสูตรเทียบโอนหรือหลักสูตรต่อเนื่องผู้ที่ต้องการศึกษาสำเร็จการศึกษาระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) หรือระดับอนุปริญญาตามที่กระทรวงศึกษาธิการรับรอง ก็สามารถเรียนต่อได้เลยโดยใช้เวลา 2 ปี (เงื่อนไขการเทียบโอนเป็นไปตามที่มหาวิทยาลัยฯ กำหนด บัณฑิตสามารถติดต่อสอบถามข้อมูลได้ตามช่องทางต่างของสาขาได้เลย)</p>
+</div>	
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>ข้อมูลการเลือกหลักสูตร</h2>
+  	<p>&#8594; ระดับ : ปริญญาตรี</p>
+  	<p>&#8594; ศูนย์ : นนทบุรี</p>
+	<p>&#8594; คณะ : วิทยาศาสตร์และเทคโนโลยี</p>
+	<p>&#8594; สาขา : อุตสาหกรรมบันเทิง</p>
+</div>	
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>ค่าเทอม</h2>
+  	<p>&#8594; ระดับ : ปริญญาตรี</p>
+  	<p>&#8594; ศูนย์ : นนทบุรี</p>
+	<p>&#8594; คณะ : วิทยาศาสตร์และเทคโนโลยี</p>
+	<p>&#8594; สาขา : อุตสาหกรรมบันเทิง</p>
+</div>		
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>ค่าบำรุงการศึกษาระดับปริญญาตรี</h2>
+	<p>&#8594; ในรายการนี้ยังไม่ได้หักลบกับบัณฑิตที่ได้รับทุนการศึกษาจาก กยศ. หรือทุนอื่นๆ ที่บัณฑิตได้รับ</p>
+<table class="tuition-table">
+  <thead>
+    <tr>
+      <th>รายการ</th>
+      <th>เทอม 1</th>
+      <th>เทอม 2</th>
+      <th>ตลอดหลักสูตร 4 ปี</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ค่าธรรมเนียมแรกเข้า</td>
+      <td>2,650</td>
+      <td>-</td>
+      <td>2,650</td>
+    </tr>
+    <tr>
+      <td>ค่าบำรุงการศึกษาปริญญาตรี (ม.6/ปวช./กศน.)</td>
+      <td>18,000</td>
+      <td>18,000</td>
+      <td>72,000</td>
+    </tr>
+    <tr>
+      <td>ค่าบำรุงการศึกษาปริญญาตรีต่อเนื่อง (ปวส.)</td>
+      <td>18,000</td>
+      <td>18,000</td>
+      <td>36,000</td>
+    </tr>
+  </tbody>
+</table>	
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>ข้อมูลกองทุนเงินให้กู้ยืมเพื่อการศึกษา (กยศ.)</h2>
+  	<p>&#8594; ติดต่อได้ที่ มทร.สวรรณภูมิ อาคาร 4 ชั้น 2 ศูนย์นนทบุรี</p>
+  	<p>&#8594; เจ้าหน้าที่ ณัฎฐริกา ทองสัมฤทธิ์</p>
+	<p>&#8594; โทร. 0 2525 4617</p>
+</div>		
+
+<div class="social-links" style="text-align: center; margin: 20px 0;">
+  <div style="margin-bottom: 20px;">
+	<img src="images/rus2.jpg" alt="กยศ" class="responsive-img" />
+    <img src="images/rus1.jpg" alt="กยศ" class="responsive-img" />
+  </div>
+</div>
+	
   <!-- Social Links -->
   <div class="social-links" style="text-align: center; margin: 20px 0; background-color: #eee; padding: 20px;">
     <h1 style="margin-bottom: 15px;">ติดต่อสอบถาม และติดตามข่าวสาร</h1>
@@ -182,6 +415,7 @@
         <img src="icon/line-icon.png" alt="LINE OA" width="200" height="200" />
       </a>
     </div>
+	  
     <div>
       <a href="https://www.facebook.com/profile.php?id=61572468128857" target="_blank" class="icon-link" style="margin: 0 10px;">
         <img src="icon/facebook-icon.png" alt="Facebook" width="40" />
@@ -231,7 +465,8 @@
       <span>Bachelor of Science Program in Entertainment Industry</span>
       <span>สาขาอุตสาหกรรมบันเทิง คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์นนทบุรี</span>
       <span>เลขที่ 217 ซอยนนทบุรี 33 ตำบลบางเขน อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000</span>
-    </div>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>
