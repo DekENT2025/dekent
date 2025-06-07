@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="สาขาอุตสาหกรรมบันเทิง กลุ่มงานภาพยนตร์ เรียนรู้เทคโนโลยีการผลิตภาพยนตร์เสมือนจริง Virtual Production ด้านสร้างฉากเสมือนจริง, ระบบกล้องเสมือนจริง, วิศวกรระบบภาพเรียลไทม์, เขียนโปรแกรมควบคุมฉาก, ถ่ายภาพยนตร์ด้วยหุ่นยนต์, เอฟเฟกต์ภาพยนตร์, จอภาพไดโอดเปล่งแสง, ไฟในกองถ่ายภาพยนตร์">
+  <meta name="keywords" content="ผู้กำกับการผลิตเสมือนจริง, เทคนิคการผลิตเสมือนจริง, สร้างฉากเสมือนจริง, ระบบกล้องเสมือนจริง, วิศวกรระบบภาพเรียลไทม์, เขียนโปรแกรมควบคุมฉาก, ถ่ายภาพยนตร์ด้วยหุ่นยนต์, เอฟเฟกต์ภาพยนตร์, จอภาพไดโอดเปล่งแสง, ไฟในกองถ่ายภาพยนตร์, Virtual Production Director, Virtual Production Technician, Virtual Environment Artist, Virtual Camera Operator, Real-Time Rendering Engineer, Virtual Production, Robotics Technician, Special Effects Technician, LED Technician, Gaffer">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="th_TH">		
+  <meta property="og:title" content="สาขาอุตสาหกรรมบันเทิง | กลุ่มวิชาเลือกภาพยนตร์">
+  <meta property="og:image" content="https://www.entertainmentindustry.com/images/ogimage.png">
+  <meta property="og:description" content="สาขาอุตสาหกรรมบันเทิง กลุ่มงานภาพยนตร์ เรียนรู้เทคโนโลยีการผลิตภาพยนตร์เสมือนจริง Virtual Production ด้านสร้างฉากเสมือนจริง, ระบบกล้องเสมือนจริง, วิศวกรระบบภาพเรียลไทม์, เขียนโปรแกรมควบคุมฉาก, ถ่ายภาพยนตร์ด้วยหุ่นยนต์, เอฟเฟกต์ภาพยนตร์, จอภาพไดโอดเปล่งแสง, ไฟในกองถ่ายภาพยนตร์">
+  <meta property="og:url" content="https://www.entertainmentindustry.com/">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="googlebot" content="index, follow">
+	
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="สาขาอุตสาหกรรมบันเทิง | กลุ่มวิชาเลือกภาพยนตร์">
+  <meta name="twitter:description" content="เรียนรู้การผลิตภาพยนตร์เสมือนจริง: ระบบกล้องเสมือนจริง, เอฟเฟกต์ภาพยนตร์, หุ่นยนต์ถ่ายทำ และเทคโนโลยีล้ำสมัยในวงการภาพยนตร์">
+  <meta name="twitter:image" content="https://www.entertainmentindustry.com/images/ogimage.png">
+	
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Entertainment Industry Program",
+    "description": "A comprehensive program covering film, acting, music and sound, event planning, and organizing.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Entertainment Industry Academy",
+      "url": "https://www.entertainmentindustry.com",
+      "logo": "https://www.entertainmentindustry.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61572468128857",
+        "https://www.youtube.com/@DekEntertainment"
+      ]
+    }
+  }
+  </script>
+
+  <title>Film</title>
+  <link rel="icon" type="image/x-icon" href="entertainmenticon.ico">
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/durex-style.css" rel="stylesheet">
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <link href="assets/css/aos.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.css">	  	
+
+   <!-- CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #000;
+      font-family: sans-serif;
+      color: #fff;
+    }
+
+    .navbar_menu {
+      background-color: #222;
+      padding: 10px 0;
+      overflow-x: auto;
+    }
+
+    .navbar_menu ul {
+      list-style: none;
+      display: flex;
+      padding: 0 200px;
+      margin: 0;
+    }
+
+    .navbar_container {
+      margin: 0 10px;
+      padding: 0 10px;
+      border-right: 1px solid #555;
+      white-space: nowrap;
+    }
+
+    .navbar_container:last-child {
+      border-right: none;
+    }
+
+    .navbar_container a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .navbar_container a span {
+      display: block;
+      font-weight: normal;
+      font-size: 0.8em;
+      color: #ccc;
+    }
+
+    .navbar_container a:hover {
+      background-color: #333;
+      color: white;
+      transform: scale(1.05);
+      border-radius: 5px;
+    }
+	  
+ /* ส่วนนี้คือ Media Query ที่เพิ่มเข้าไป */
+  @media (max-width: 768px) {
+    .navbar_menu ul {
+      flex-direction: column;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    .navbar_container {
+      border-right: none;
+      border-bottom: 1px solid #444;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar_container a {
+      width: 100%;
+      padding: 15px;
+    }
+  }	  
+
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 0px;
+      background-color: #000;
+    }
+
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+	  
+    footer {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer_container span {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- เมนู -->
+  <nav class="navbar_menu">
+    <ul>
+      <li class="navbar_container active">
+        <a href="home.html">หน้าหลัก<span>Home</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="performing_arts.html">กลุ่มวิชาเทคโนโลยีการแสดง<span>Technology Performing Arts</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Film.html">กลุ่มวิชาเทคโนโลยีภาพยนตร์<span>Technology Film</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Sound.html">กลุ่มวิชาเทคโนโลยีดนตรีและเสียง<span>Technology Music and Sound</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Organizer.html">วิชาเอกเทคโนโลยีออแกไนเซอร์และอีเวนต์<span>Technology Organizer and Event</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Registration.html">สมัครเรียน<span>Registration</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- ภาพตรงกลาง -->
+  <div class="image-wrapper">
+      <img src="images/Film.jpg" alt="Film" class="responsive-img">
+  </div>
+	
+<!-- ปุ่มแชทกลม ลอยอยู่มุมขวาล่าง -->
+<a href="https://m.me/61572468128857" target="_blank" class="messenger-float-btn" aria-label="Chat on Messenger">
+  <img src="images/messenger.png" alt="Messenger" width="50" height="50">
+</a>
+
+<style>
+  .messenger-float-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 2px;
+    z-index: 999;
+    transition: transform 0.3s;
+  }
+
+  .messenger-float-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .messenger-float-btn img {
+    display: block;
+  }
+</style>	
+
+  <!-- ส่วนท้าย -->
+  <footer>
+    <div class="footer_container">
+      <span>Bachelor of Science Program in Entertainment Industry</span>
+      <span>สาขาอุตสาหกรรมบันเทิง คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์นนทบุรี</span>
+      <span>เลขที่ 217 ซอยนนทบุรี 33 ตำบลบางเขน อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000</span>
+    </div>
+  </footer>
+
+</body>
+</html>

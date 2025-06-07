@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entertainment Industry Program - Film, Music, Event, and Performance Tracks. Learn real-world production technologies from industry professionals.">
+  <meta name="keywords" content="Actor, Stunt, Motion Capture, Model, Dancer, Choreographer, Film Director, Virtual Production, Sound Engineer, Lighting Technician, Event Organizer, Entertainment Industry">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Entertainment Industry Program">
+  <meta property="og:image" content="https://www.entertainmentindustry.com/images/ogimage.png">
+  <meta property="og:description" content="Explore the Entertainment Industry Program, featuring virtual film production, sound engineering, live events, and performance arts with hands-on learning.">
+  <meta property="og:url" content="https://www.entertainmentindustry.com/en">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="googlebot" content="index, follow">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Entertainment Industry Program",
+    "description": "A comprehensive program covering film, acting, music and sound, event planning, and organizing.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Entertainment Industry Academy",
+      "url": "https://www.entertainmentindustry.com",
+      "logo": "https://www.entertainmentindustry.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61572468128857",
+        "https://www.youtube.com/@DekEntertainment"
+      ]
+    }
+  }
+  </script>
+
+  <title>Entertainment Industry</title>
+ <link rel="icon" type="image/x-icon" href="entertainmenticon.ico">	
+
+   <!-- CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    } 
+
+    body {
+      background: #000;
+      font-family: sans-serif;
+      color: #fff;
+    }
+	  
+	    .banner {
+      width: 100%;
+      height: auto;
+      display: block;
+    }  
+
+    .navbar_menu {
+      background-color: #222;
+      padding: 10px 0;
+      overflow-x: auto;
+    }
+
+    .navbar_menu ul {
+      list-style: none;
+      display: flex;
+      padding: 0 200px;
+      margin: 0;
+    }
+
+    .navbar_container {
+      margin: 0 10px;
+      padding: 0 10px;
+      border-right: 1px solid #555;
+      white-space: nowrap;
+    }
+
+    .navbar_container:last-child {
+      border-right: none;
+    }
+
+    .navbar_container a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .navbar_container a span {
+      display: block;
+      font-weight: normal;
+      font-size: 0.8em;
+      color: #ccc;
+    }
+
+    .navbar_container a:hover {
+      background-color: #333;
+      color: white;
+      transform: scale(1.05);
+      border-radius: 5px;
+    }
+	  
+ /* ส่วนนี้คือ Media Query ที่เพิ่มเข้าไป */
+  @media (max-width: 768px) {
+    .navbar_menu ul {
+      flex-direction: column;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    .navbar_container {
+      border-right: none;
+      border-bottom: 1px solid #444;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar_container a {
+      width: 100%;
+      padding: 15px;
+    }
+  }	  	  
+	  
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 0px;
+      background-color: #000;
+    }
+
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .video-wrapper, .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto 0px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .video-wrapper iframe,
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto 0px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .iframe-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+.image-list {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* ระยะห่างระหว่างภาพ */
+  padding: 0 16px; /* เผื่อ margin ขอบหน้าจอมือถือ */
+  box-sizing: border-box;
+}
+
+.image-list img {
+  width: 100%;      /* ยืดตาม container */
+  height: auto;     /* รักษาสัดส่วน */
+  display: block;
+  border-radius: 8px; /* มุมโค้งเล็กน้อย */
+  object-fit: contain; /* เผื่อไว้ในกรณีขนาดไม่เท่ากัน */
+}
+	  
+@media (max-width: 480px) {
+  .image-list {
+    gap: 5px; /* ลดระยะห่างลงสำหรับมือถือจอเล็ก */
+    padding: 0 8px;
+  }
+}	  
+	  
+    footer {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer_container span {
+      display: block;
+      margin-bottom: 5px;
+    }
+	  
+.lang-btn {
+  padding: 2px 16px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-flex;       /* ใช้ flex ให้องค์ประกอบเรียงแถว */
+  align-items: center;        /* แนวแกนตั้งจัดกึ่งกลาง */
+}
+
+.lang-btn span {
+  margin-right: 6px;           /* ช่องว่างระหว่างตัวอักษรและธง */
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.lang-btn img {
+  display: block;
+  width: 20px;
+  height: 14px;
+}	  
+	  
+  </style>
+</head>
+	
+<body>
+<a href="home.html" class="lang-btn">
+  <span>TH</span>
+  <img src="images/icon/flag_th.jpg" alt="ไทย">
+</a>
+<a href="index-en.html" class="lang-btn">
+  <span>EN</span>
+  <img src="images/icon/flag_en.jpg" alt="English">
+</a>	
+	
+  <!-- เมนู -->
+  <nav class="navbar_menu">
+    <ul>
+      <li class="navbar_container active">
+        <a href="home.html">Home<span>หน้าหลัก</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="performing_arts.html">Technology Performing Arts<span>กลุ่มวิชาเทคโนโลยีการแสดง</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Film.html">Technology Film<span>กลุ่มวิชาเทคโนโลยีภาพยนตร์</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Sound.html">Technology Music and Sound<span>กลุ่มวิชาเทคโนโลยีดนตรีและเสียง</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Organizer.html">Technology Organizer and Event<span>วิชาเอกเทคโนโลยีออแกไนเซอร์และอีเวนต์</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Registration.html">Registration<span>สมัครเรียน</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <img src="images/server-name.png" alt="Banner" class="banner">
+
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>Program Overview</h2>
+	<h3>• Degree Name : Bachelor of Science Entertainment Industry (B.Sc.)</h3>
+	<h3>• Bachelor's Degree – 4 years</h3>
+  	<h3>• The program requires a total of 120 credits.</h3>
+</div>
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>Admission Requirements</h2>
+  	<p>&#8594; Applicants seeking admission to the first year of the bachelor's degree program must have successfully completed a Vocational Certificate (Por Wor Chor) in any field, or upper secondary education (Matthayom 6) in any academic track, or possess an equivalent qualification recognized by the Ministry of Education of Thailand or by the relevant educational authority in the applicant’s country of graduation.</p>
+  	<p>&#8594; For the transfer or continuing education program, individuals who have completed a Higher Vocational Certificate (Por Wor Sor) or an associate degree accredited by the Ministry of Education are eligible to complete the degree within 2 years. (Credit transfer is subject to the university’s regulations. Interested candidates may contact the program through its official communication channels for more information.)</p>
+</div>	
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  <h2>Four Areas of Specialization</h2>
+  <h3>Learners may select their area of specialization from the following professional tracks according to their abilities and interests.</h3>
+  <p>&#8594; Performance Technology 
+    <a href="performing_arts.html" style="color: #C58B1D;">Learn more</a>
+  </p>
+  <p>&#8594; Film Technology 
+    <a href="Film.html" style="color: #C58B1D;">Learn more</a>
+  </p>
+  <p>&#8594; Music and Sound Technology 
+    <a href="Sound.html" style="color: #C58B1D;">Learn more</a>
+  </p>
+  <p>&#8594; Event and Organizer Technology 
+    <a href="Organizer.html" style="color: #C58B1D;">Learn more</a>
+  </p>
+</div>
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>The program features guest lecturers from top-tier companies, providing students with real-world insights.</h2>
+  	<p>Students will learn from professionals in the field and gain hands-on experience at every stage of production, just like in real industry settings.</p>
+</div>	
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">	
+  <h2>University Location and Directions</h2>
+  <p>&#8594; 217 Nonthaburi 33 Alley, Bang Khen Subdistrict, Mueang Nonthaburi District, Nonthaburi 11000
+    <a href="https://g.co/kgs/1ruHqdh" style="color: #2298C3;" target="_blank">View Map</a>
+  </p>
+  <p>&#8594; MRTA Purple Line, Phra Nang Klao Bridge Station
+    <a href="https://www.mrta.co.th/th/mrt-station/11092" style="color: #2298C3;" target="_blank">Learn more</a>
+  </p>
+  <p>&#8594; Public Transport: Bus No. 1, 134 (AC), 18, 191, 203, Songthaew 1053 (Nonthaburi Pier - Wat Salee Kho)
+    <a href="https://moovitapp.com/index/th/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%82%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%B0-%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2-Bangkok-site_174495130-2401" style="color: #2298C3;" target="_blank">Learn more</a>
+  </p>
+  <p>&#8594; Chao Phraya Express Boat (Yellow Green Flag)
+    <a href="https://www.chaophrayaexpressboat.com/chaophrayaexpressboat" style="color: #2298C3;" target="_blank">Learn more</a>
+  </p>
+</div>	
+	
+  <!-- วีดีโอ -->
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/wYmf_6-lIeY" allowfullscreen></iframe>
+  </div>
+	
+<div style="text-align: center; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>Sample career paths available to graduates upon program completion</h2>
+</div>
+	
+<div class="image-list">
+  <img src="slider/slide1.png" alt="">
+  <img src="slider/slide2.png" alt="">
+  <img src="slider/slide3.png" alt="">
+  <img src="slider/slide4.png" alt="">
+  <img src="slider/slide5.png" alt="">
+  <img src="slider/slide6.png" alt="">
+  <img src="slider/slide7.png" alt="">
+  <img src="slider/slide8.png" alt="">
+  <img src="slider/slide9.png" alt="">
+  <img src="slider/slide10.png" alt="">
+  <img src="slider/slide11.png" alt="">
+  <img src="slider/slide12.png" alt="">
+</div>
+
+  <!-- Social Links -->
+  <div class="social-links" style="text-align: center; margin: 20px 0; background-color: #000; padding: 20px;">
+    <h1 style="margin-bottom: 15px;">LINE OA</h1>
+    <div style="margin-bottom: 20px;">
+      <a href="https://lin.ee/TvcYnfx" target="_blank">
+        <img src="images/icon/line-icon.png" alt="LINE OA" width="200" height="200" />
+      </a>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/profile.php?id=61572468128857" target="_blank" class="icon-link" style="margin: 0 10px;">
+        <img src="images/icon/facebook-icon.png" alt="Facebook" width="40" />
+      </a>
+      <a href="https://www.youtube.com/@DekEntertainment" target="_blank" class="icon-link" style="margin: 0 10px;">
+        <img src="images/icon/youtube-icon.png" alt="YouTube" width="40" />
+      </a>
+      <a href="https://www.tiktok.com/@dek.entertainments?_t=ZS-8wxuHUAFZ7Y&_r=1" target="_blank" class="icon-link" style="margin: 0 10px;">
+        <img src="images/icon/Tiktok-icon.png" alt="TikTok" width="40" />
+      </a>
+      <a href="https://g.co/kgs/1ruHqdh" target="_blank" class="icon-link" style="margin: 0 10px;">
+        <img src="images/icon/Map-icon.png" alt="Map" width="40" />
+      </a>
+    </div>
+  </div>
+	
+<!-- ปุ่มแชทกลม ลอยอยู่มุมขวาล่าง -->
+<a href="https://m.me/61572468128857" target="_blank" class="messenger-float-btn" aria-label="Chat on Messenger">
+  <img src="images/messenger.png" alt="Messenger" width="50" height="50">
+</a>
+
+<style>
+  .messenger-float-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 2px;
+    z-index: 999;
+    transition: transform 0.3s;
+  }
+
+  .messenger-float-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .messenger-float-btn img {
+    display: block;
+  }
+</style>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer_container">
+      <span>Bachelor of Science Program in Entertainment Industry</span>
+      <span>Technology, Rajamangala University of Technology Suvarnabhumi, Nonthaburi Campus</span>
+      <span>217 Nonthaburi 33 Alley, Bang Khen Subdistrict, Mueang Nonthaburi District, Nonthaburi 11000</span>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>

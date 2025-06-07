@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about film, acting, music & sound, event organizing, and the entertainment industry สาขาอุตสาหกรรมบันเทิง สอนภาพยนตร์ การแสดง ดนตรีและเสียง ออแกไนเซอร์และอีเวนต์">
+  <meta name="keywords" content="entertainment, movies, music, Costume, Technology, Performing, Art, Sound, Organizer, Event, Visual, Studio, Fashion, LED, ภาพยนตร์, การแสดง, ดนตรี, เสียง, ออแกไนเซอร์, อีเวนต์, คอนเสิร์ต, เรียน, สมัครเรียน, สาขาวิชาอุตสาหกรรมบันเทิง, อุตสาหกรรมบันเทิง, คอสตูม, แฟชั่น">
+	
+  <meta property="og:title" content="Entertainment Industry">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.entertainmentindustry.com/images/ogimage.png">
+  <meta property="og:description" content="A comprehensive program in the entertainment industry covering film, acting, music and sound, event planning, and organizing. สาขาอุตสาหกรรมบันเทิง สอนภาพยนตร์ การแสดง ดนตรีและเสียง ออแกไนเซอร์และอีเวนต์">
+  <meta property="og:url" content="https://www.entertainmentindustry.com/">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="googlebot" content="index, follow">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Entertainment Industry Program",
+    "description": "A comprehensive program covering film, acting, music and sound, event planning, and organizing.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Entertainment Industry Academy",
+      "url": "https://www.entertainmentindustry.com",
+      "logo": "https://www.entertainmentindustry.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61572468128857",
+        "https://www.youtube.com/@DekEntertainment"
+      ]
+    }
+  }
+  </script>
+
+  <title>Entertainment Industry</title>
+ <link rel="icon" type="image/x-icon" href="entertainmenticon.ico">	
+	
+   <!-- CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    } 
+
+    body {
+      background: #000;
+      font-family: sans-serif;
+      color: #fff;
+    }
+	  
+	    .banner {
+      width: 100%;
+      height: auto;
+      display: block;
+    }  
+
+    .navbar_menu {
+      background-color: #222;
+      padding: 10px 0;
+      overflow-x: auto;
+    }
+
+    .navbar_menu ul {
+      list-style: none;
+      display: flex;
+      padding: 0 200px;
+      margin: 0;
+    }
+
+    .navbar_container {
+      margin: 0 10px;
+      padding: 0 10px;
+      border-right: 1px solid #555;
+      white-space: nowrap;
+    }
+
+    .navbar_container:last-child {
+      border-right: none;
+    }
+
+    .navbar_container a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .navbar_container a span {
+      display: block;
+      font-weight: normal;
+      font-size: 0.8em;
+      color: #ccc;
+    }
+
+    .navbar_container a:hover {
+      background-color: #333;
+      color: white;
+      transform: scale(1.05);
+      border-radius: 5px;
+    }
+	  
+ /* ส่วนนี้คือ Media Query ที่เพิ่มเข้าไป */
+  @media (max-width: 768px) {
+    .navbar_menu ul {
+      flex-direction: column;
+      padding: 0 20px;
+      align-items: flex-start;
+    }
+
+    .navbar_container {
+      border-right: none;
+      border-bottom: 1px solid #444;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar_container a {
+      width: 100%;
+      padding: 15px;
+    }
+  }	   	  
+	  
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 0px;
+      background-color: #000;
+    }
+
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .video-wrapper, .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto 0px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .video-wrapper iframe,
+    .iframe-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto 0px;
+      aspect-ratio: 16 / 9;
+    }
+
+    .iframe-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+.image-list {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* ระยะห่างระหว่างภาพ */
+  padding: 0 16px; /* เผื่อ margin ขอบหน้าจอมือถือ */
+  box-sizing: border-box;
+}
+
+.image-list img {
+  width: 100%;      /* ยืดตาม container */
+  height: auto;     /* รักษาสัดส่วน */
+  display: block;
+  border-radius: 8px; /* มุมโค้งเล็กน้อย */
+  object-fit: contain; /* เผื่อไว้ในกรณีขนาดไม่เท่ากัน */
+}
+	  
+@media (max-width: 480px) {
+  .image-list {
+    gap: 5px; /* ลดระยะห่างลงสำหรับมือถือจอเล็ก */
+    padding: 0 8px;
+  }
+}	  
+	  
+    footer {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer_container span {
+      display: block;
+      margin-bottom: 5px;
+    }
+	  
+.lang-btn {
+  padding: 2px 16px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-flex;       /* ใช้ flex ให้องค์ประกอบเรียงแถว */
+  align-items: center;        /* แนวแกนตั้งจัดกึ่งกลาง */
+}
+
+.lang-btn span {
+  margin-right: 6px;           /* ช่องว่างระหว่างตัวอักษรและธง */
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.lang-btn img {
+  display: block;
+  width: 20px;
+  height: 14px;
+}	  
+  
+  </style>
+</head>
+	
+<body>
+<a href="index.html" class="lang-btn">
+  <span>TH</span>
+  <img src="images/icon/flag_th.jpg" alt="ไทย">
+</a>
+<a href="index-en.html" class="lang-btn">
+  <span>EN</span>
+  <img src="images/icon/flag_en.jpg" alt="English">
+</a>		
+
+  <!-- เมนู -->
+  <nav class="navbar_menu">
+    <ul>
+      <li class="navbar_container active">
+        <a href="home.html">หน้าหลัก<span>Home</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="performing_arts.html">กลุ่มวิชาเทคโนโลยีการแสดง<span>Technology Performing Arts</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Film.html">กลุ่มวิชาเทคโนโลยีภาพยนตร์<span>Technology Film</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Sound.html">กลุ่มวิชาเทคโนโลยีดนตรีและเสียง<span>Technology Music and Sound</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Organizer.html">วิชาเอกเทคโนโลยีออแกไนเซอร์และอีเวนต์<span>Technology Organizer and Event</span></a>
+      </li>
+      <li class="navbar_container">
+        <a href="Registration.html">สมัครเรียน<span>Registration</span></a>
+      </li>
+    </ul>
+  </nav>	
+
+  <img src="images/server-name.png" alt="Banner" class="banner">
+	
+<div style="text-align: center; margin: 5px auto; max-width: 960px;">
+  <h2>หลักสูตรอุตสาหกรรมบันเทิง</h2>
+  <p>คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์นนทบุรี</p>
+  <p>(เรียนที่ อ.เมือง จ.หวัดนนทบุรี)</p>
+</div>	
+
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>ข้อมูลหลักสูตร</h2>
+  	<h3>• ชื่อปริญญาไทย : วิทยาศาสตรบัณฑิต สาขาอุตสาหกรรมบันเทิง (วท.บ.)</h3>
+	<h3>• Degree Name : Bachelor of Science Entertainment Industry (B.Sc.)</h3>
+	<h3>• ระดับปริญญาตรี 4 ปี</h3>
+  	<h3>• หน่วยกิตตลอดหลักสูตร 120 หน่วยกิต</h3>
+</div>
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>คุณสมบัติของผู้เข้าศึกษา</h2>
+  	<p>&#8594; ระดับปริญญาตรีปีที่ 1 ต้องสำเร็จการศึกษาระดับประกาศนียบัตรวิชาชีพ (ปวช.) ทุกสาขาวิชา และระดับมัธยมศึกษาตอนปลาย (ม.6) ทุกกลุ่มสาระการเรียนรู้ หรือเทียบเท่าที่กระทรวงศึกษาธิการรับรอง</p>
+  	<p>&#8594; สำหรับหลักสูตรเทียบโอนหรือหลักสูตรต่อเนื่องผู้ที่ต้องการศึกษาสำเร็จการศึกษาระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) หรือระดับอนุปริญญาตามที่กระทรวงศึกษาธิการรับรอง ก็สามารถเรียนต่อได้เลยโดยใช้เวลา 2 ปี (เงื่อนไขการเทียบโอนเป็นไปตามที่มหาวิทยาลัยฯ กำหนด บัณฑิตสามารถติดต่อสอบถามข้อมูลได้ตามช่องทางต่างของสาขาได้เลย)</p>
+</div>	
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  <h2>หลักสูตรเน้นองค์ความรู้ 4 ด้าน</h2>
+  <h3>โดยผู้เรียนสามารถเลือกเน้นวิชาเรียนตามทักษะความสามารถในกลุ่มวิชาชีพเลือกได้ดังต่อไปนี้</h3>
+  <p>&#8594; กลุ่มวิชาชีพเลือกเทคโนโลยีการแสดง 
+    <a href="performing_arts.html" style="color: #C58B1D;">ดูข้อมูลเพิ่มเติม</a>
+  </p>
+  <p>&#8594; กลุ่มวิชาชีพเลือกเทคโนโลยีภาพยนตร์ 
+    <a href="Film.html" style="color: #C58B1D;">ดูข้อมูลเพิ่มเติม</a>
+  </p>
+  <p>&#8594; กลุ่มวิชาชีพเลือกเทคโนโลยีดนตรีและเสียง 
+    <a href="Sound.html" style="color: #C58B1D;">ดูข้อมูลเพิ่มเติม</a>
+  </p>
+  <p>&#8594; กลุ่มวิชาชีพเลือกเทคโนโลยีออแกไนเซอร์และอีเวนต์ 
+    <a href="Organizer.html" style="color: #C58B1D;">ดูข้อมูลเพิ่มเติม</a>
+  </p>
+</div>
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>มีอาจารย์พิเศษจากสถานประกอบการชั้นนำร่วมสอนในชั้นเรียน</h2>
+  	<p>บัณฑิตจะได้เรียนรู้ในศาสตร์แขนงต่างๆ จากผู้ปฏิบัติงานจริงและได้ทดลองปฏิบัติงานจริงในทุกๆ ขั้นตอนของการผลิตแบบละเอียดแบบเดียวกับสถานประกอบการ 100%</p>
+</div>	
+	
+<div style="text-align: left; margin: 30px auto; max-width: 960px; padding: 0 20px;">	
+  <h2>ที่ตั้งมหาวิทยาลัยฯ และการเดินทาง</h2>
+  <p>&#8594; เลขที่ 217 ซอยนนทบุรี 33 ตำบลบางเขน อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000 
+    <a href="https://g.co/kgs/1ruHqdh" style="color: #2298C3;" target="_blank">ดูแผนที่</a>
+  </p>
+  <p>&#8594; MRTA รถไฟฟ้าสายสีม่วง สถานีสะพานพระนั่งเกล้า
+    <a href="https://www.mrta.co.th/th/mrt-station/11092" style="color: #2298C3;" target="_blank">ดูข้อมูลเพิ่มเติม</a>
+  </p>
+  <p>&#8594; ขนส่งสาธารณะ ปอ.1, 134 (AC), 18, 191, 203 รถสองแถวสาย 1053 (ท่าน้ำนนทบุรี-วัดสาลีโข) และอื่นๆ คลิกลิงค์
+    <a href="https://moovitapp.com/index/th/%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%9A%E0%B8%82%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%B0-%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%9E%E0%B8%A2%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%99%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2-Bangkok-site_174495130-2401" style="color: #2298C3;" target="_blank">ดูข้อมูลเพิ่มเติม</a>
+  </p>
+  <p>&#8594; เรือด่วนเจ้าพระยา ธงเขียวเหลือง
+    <a href="https://www.chaophrayaexpressboat.com/chaophrayaexpressboat" style="color: #2298C3;" target="_blank">ดูข้อมูลเพิ่มเติม</a>
+  </p>
+</div>	
+	
+  <!-- วีดีโอ -->
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/wYmf_6-lIeY" allowfullscreen></iframe>
+  </div>
+	
+<div style="text-align: center; margin: 30px auto; max-width: 960px; padding: 0 20px;">
+  	<h2>ตัวอย่างอาชีพบางส่วนที่สามารถทำได้หลังจบการศึกษา</h2>
+</div>
+	
+<div class="image-list">
+  <img src="slider/slide1.png" alt="">
+  <img src="slider/slide2.png" alt="">
+  <img src="slider/slide3.png" alt="">
+  <img src="slider/slide4.png" alt="">
+  <img src="slider/slide5.png" alt="">
+  <img src="slider/slide6.png" alt="">
+  <img src="slider/slide7.png" alt="">
+  <img src="slider/slide8.png" alt="">
+  <img src="slider/slide9.png" alt="">
+  <img src="slider/slide10.png" alt="">
+  <img src="slider/slide11.png" alt="">
+  <img src="slider/slide12.png" alt="">
+</div>
+
+  <!-- Social Links -->
+  <div class="social-links" style="text-align: center; margin: 20px 0; background-color: #000; padding: 20px;">
+    <h1 style="margin-bottom: 15px;">LINE OA</h1>
+    <div style="margin-bottom: 20px;">
+      <a href="https://lin.ee/TvcYnfx" target="_blank">
+        <img src="images/icon/line-icon.png" alt="LINE OA" width="200" height="200" />
+      </a>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/profile.php?id=61572468128857" target="_blank" class="icon-link" style="margin: 0 10px;">
+        <img src="images/icon/facebook-icon.png" alt="Facebook" width="40" />
+      </a>
+      <a href="https://www.youtube.com/@DekEntertainment" target="_blank" class="icon-link" style="margin: 0 10px;">
+        <img src="images/icon/youtube-icon.png" alt="YouTube" width="40" />
+      </a>
+      <a href="https://www.tiktok.com/@dek.entertainments?_t=ZS-8wxuHUAFZ7Y&_r=1" target="_blank" class="icon-link" style="margin: 0 10px;">
+        <img src="images/icon/Tiktok-icon.png" alt="TikTok" width="40" />
+      </a>
+      <a href="https://g.co/kgs/1ruHqdh" target="_blank" class="icon-link" style="margin: 0 10px;">
+        <img src="images/icon/Map-icon.png" alt="Map" width="40" />
+      </a>
+    </div>
+  </div>
+	
+<!-- ปุ่มแชทกลม ลอยอยู่มุมขวาล่าง -->
+<a href="https://m.me/61572468128857" target="_blank" class="messenger-float-btn" aria-label="Chat on Messenger">
+  <img src="images/messenger.png" alt="Messenger" width="50" height="50">
+</a>
+
+<style>
+  .messenger-float-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 2px;
+    z-index: 999;
+    transition: transform 0.3s;
+  }
+
+  .messenger-float-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .messenger-float-btn img {
+    display: block;
+  }
+</style>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer_container">
+      <span>Bachelor of Science Program in Entertainment Industry</span>
+      <span>สาขาอุตสาหกรรมบันเทิง คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์นนทบุรี</span>
+      <span>เลขที่ 217 ซอยนนทบุรี 33 ตำบลบางเขน อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000</span>
+    </div>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
